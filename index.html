@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List App</title>
+
+  <!-- Link to the external stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="todo-card">
+    <h1 class="title">My To-Do List</h1>
+    <p class="subtitle">Stay organized and get things done.</p>
+
+    <!-- Input area: task field + Add button -->
+    <div class="input-row">
+      <input
+        type="text"
+        id="taskInput"
+        placeholder="Enter a new task..."
+        maxlength="100"
+        autocomplete="off"
+        aria-label="New task"
+      >
+      <button id="addBtn" class="btn btn-add" type="button">Add Task</button>
+    </div>
+
+    <!-- Task list (filled by JavaScript) -->
+    <ul id="taskList" class="task-list"></ul>
+
+    <!-- Message shown when there are no tasks -->
+    <p id="emptyMessage" class="empty-message">No tasks yet. Add your first task above!</p>
+
+    <!-- Task counter -->
+    <p id="taskCount" class="task-count"></p>
+  </main>
+
+  <!-- Link to the external JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
